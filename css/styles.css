@@ -6,98 +6,89 @@
 :root {
 	--primary-font: Ardagh;
 	--primary-color: black;
-	--second-color: gold;
+	--secondary-color: gold;
 	--third-color: orange;
 }
 
-body{
-	font-family: var(--primary-font);
+/* reset */
+
+body,
+h1,
+ul,
+p {
 	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+/* fin reset */
+
+body {
+	font-family: var(--primary-font);
 }
 
 main {
 	background: url(https://images.affiches-et-posters.com//albums/3/2897/medium/IE8950.jpg) no-repeat fixed center center;
 	background-size: cover;
 	min-height: 100vh;
+	padding: 1rem;
 }
 
-a {
-	text-decoration: none;
-	color: var(--second-color);
-}
-
-a:hover {
-	color: var(--third-color);
-}
-
-/* IDs */
-
-#story {
-	height: 10rem;
-	margin: 0;
-}
-
-/* Class */
-
-.info {
-	background-color: rgb(255, 255, 255);
-	box-shadow: 0px 0px 2px var(--primary-color);
-	border: 3px solid var(--second-color);
-}
-
-.border-second{
-	border: 3px solid var(--second-color);
-}
-
-.rounded{
-	border-radius: 0.25rem;
-}
-.bg-primary {
+header,
+footer {
 	background-color: var(--primary-color);
-}
-
-.text-center {
+	color: var(--secondary-color);
 	text-align: center;
-}
-.text-second {
-	color: var(--second-color);
-}
-
-.p-1 {
 	padding: 0.5rem;
 }
-.py-1 {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-}
-.py-2{
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-}
 
-.m-0 {
-	margin: 0;
-}
-.mx-1 {
+footer a {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 }
 
-.center {
-	margin-left: auto;
-	margin-right: auto;
+#personnages {
+	text-align: center;
+}
+
+#personnage img,
+#personnages img {
+	padding-bottom: auto;
+	background-color: var(--primary-color);
+	width: 225px;
+}
+
+#personnage ul,
+#personnages li,
+#personnages a {
+	display: inline-block;
+}
+
+#personnage li,
+#personnage img,
+#personnages img,
+#story p {
+	border: solid 3px var(--secondary-color);
+	border-radius: 1rem;
+}
+#personnage li,
+#story p {
+	padding: 0.25rem;
+	background-color: white;
+}
+#story h2,
+a:hover {
+	color: var(--secondary-color);
+}
+
+a {
+	text-decoration: none;
+	color: var(--secondary-color);
 }
 
 .container {
 	margin-left: 10%;
 	margin-right: 10%;
 }
-
-.overflow {
-	overflow: auto;
-}
-
-.d-inline {
-	display: inline-block;
-}
-
